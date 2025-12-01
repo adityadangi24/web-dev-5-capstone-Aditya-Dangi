@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f8f9fc;
+    color: #333;
+}
+
+/* Layout Containers */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* NAVIGATION */
+header {
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0066ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #0066ff;
+}
+
+/* HERO */
+.hero {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.hero-text p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.hero-img {
+    width: 400px;
+}
+
+/* BUTTONS */
+.btn {
+    background: #0066ff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #004ecc;
+}
+
+/* COURSES */
+.section-title {
+    font-size: 32px;
+    margin: 40px 0 20px;
+    text-align: center;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.course-card img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+/* PRICING */
+.pricing-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.price-card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.popular {
+    border: 3px solid #0066ff;
+}
+
+.price {
+    font-size: 30px;
+    margin: 10px 0;
+    color: #0066ff;
+}
+
+.price-card ul {
+    text-align: left;
+    margin: 15px 0;
+}
+
+.price-card ul li {
+    margin: 5px 0;
+}
+
+/* TESTIMONIALS */
+.test-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.test-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.test-card h4 {
+    margin-top: 10px;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 80%;
+    }
+
+    .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
