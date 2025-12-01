@@ -101,4 +101,3 @@ If you want, I can also create:
 - ✔ Animated elements with transitions  
 - ✔ A GitHub Pages deployment guide  
 Just tell me!
-
